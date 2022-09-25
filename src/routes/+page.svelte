@@ -181,7 +181,7 @@
      <div class="pt-2">
         <!-- {JSON.stringify(store)} -->
         <!-- const { [removeMe]: removedKey, ...newObj } = obj; -->
-        {JSON.stringify((({ el, ...o }) => o)(store))}
+        {JSON.stringify((({ id, el, ...o }) => o)(store))}
 
      </div>
    {/each}
