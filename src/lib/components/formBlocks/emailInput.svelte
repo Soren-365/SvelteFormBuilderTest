@@ -16,21 +16,21 @@
 	 */
      let id
 
-    let instance_data = $dropStore.find( component_data => component_data.field_name === id).data
+    let instance = $dropStore.find( component_data => component_data.field_name === id)
 
 </script>
 
 <div class="parent-component-container">
 	<button on:click={() => (edit = !edit)}>
-		<LabelTagName {instance_data}  type={"email"}/>
+		<LabelTagName {instance}  type={"email"}/>
 	</button>
     {#if edit}
 	<div class="options-container">
 		
         <div class="flex flex-1 flex-row flex-wrap items-center gap-x-4 gap-y-0">
-            <div><Label {instance_data} /></div>
-            <div class=""><HideLabel {instance_data} /></div>
-            <div class=""><Required {instance_data}  /></div>
+            <div><Label instance_data={instance.data} /></div>
+            <div class=""><HideLabel instance_data={instance.data} /></div>
+            <div class=""><Required instance_data={instance.data}  /></div>
         </div>
 		
 	</div>

@@ -7,13 +7,13 @@ import EmailInput from '$lib/components/formBlocks/emailInput.svelte';
 
 
 let data_email = {
-    name: '',
+    label: '',
     required: true,
     hide: false
 };
 
  let data_text = {
-    name: '',
+    label: '',
     hide: false,
     required: true,
     count: 0
@@ -21,8 +21,8 @@ let data_email = {
 
 
 export let objects = [
-    {  el: "",id: 1, field_name: "", type: 'text', label: "", component: TextInput, data: data_text },
-    {  el: "",id: 2, field_name: "", type: 'email', label: "", component: EmailInput, data: data_email }
+    {  el: "",id: 1, field_name: "", type: 'text', name: "", component: TextInput, data: data_text },
+    {  el: "",id: 2, field_name: "", type: 'email', name: "", component: EmailInput, data: data_email }
 ];
 
 export const dropStore = writable([])
