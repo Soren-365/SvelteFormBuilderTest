@@ -29,7 +29,7 @@
 
 <div class="parent-component-container">
 	<button class="w-full" on:click={() => (edit = !edit)}>
-		<LabelTagName {labelName} type={'text'} />
+		<LabelTagName {instance_data} type={'text'} />
 	</button>
 	{#if edit}
 		<div class="options-container">

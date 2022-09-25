@@ -23,8 +23,8 @@ let data_email = {
 
 
 export let objects = [
-    {  el: "",id: 1, field_name: "", type: 'text', component: TextInput, data: data_text },
-    {  el: "",id: 2, field_name: "", type: 'email', component: EmailInput, data: data_email }
+    {  el: "",id: 1, field_name: "", type: 'text', label: "", component: TextInput, data: data_text },
+    {  el: "",id: 2, field_name: "", type: 'email', label: "", component: EmailInput, data: data_email }
 ];
 
 export const dropStore = writable([])

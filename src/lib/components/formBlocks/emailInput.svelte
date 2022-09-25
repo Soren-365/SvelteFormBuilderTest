@@ -22,7 +22,7 @@
 
 <div class="parent-component-container">
 	<button on:click={() => (edit = !edit)}>
-		<LabelTagName {labelName}  type={"email"}/>
+		<LabelTagName {instance_data}  type={"email"}/>
 	</button>
     {#if edit}
 	<div class="options-container">
