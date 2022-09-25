@@ -176,10 +176,16 @@
 <button class="border-solid border-2 border-gray-500 p-2"on:click={handleClick}>
 	Print Dropstore
 </button>
-     {#if dropStore_}
-{JSON.stringify(dropStore_)}
-   {/if}
+{#if dropStore_}
+     {#each dropStore_ as store}
+     <div class="pt-2">
+        <!-- {JSON.stringify(store)} -->
+        <!-- const { [removeMe]: removedKey, ...newObj } = obj; -->
+        {JSON.stringify((({ el, ...o }) => o)(store))}
 
+     </div>
+   {/each}
+{/if}
 
 <style>
 	:global(html),
