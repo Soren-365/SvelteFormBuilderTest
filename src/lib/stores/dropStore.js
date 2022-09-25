@@ -7,14 +7,12 @@ import EmailInput from '$lib/components/formBlocks/emailInput.svelte';
 
 
 let data_email = {
-    field_name: "",
     name: '',
     required: true,
     hide: false
 };
 
  let data_text = {
-    field_name: '',
     name: '',
     hide: false,
     required: true,
