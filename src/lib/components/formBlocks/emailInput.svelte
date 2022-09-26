@@ -21,9 +21,10 @@
 </script>
 
 <div class="parent-component-container">
-	<button on:click={() => (edit = !edit)}>
-		<LabelTagName {instance}  type={"email"}/>
-	</button>
+	<div class="flex justify-between "><LabelTagName {instance} type={'email'} />
+		<button class="m-2 flex-initial align-top " on:click={() => (edit = !edit)}><img class="text-center mx-auto flex shrink-0 p-1" src={"/edit.svg"} alt={"pencil for edit"}/>
+	</button></div>
+		
     {#if edit}
 	<div class="options-container">
 		

@@ -14,6 +14,7 @@
     dropStore_ = $dropStore
   }
 
+  $: $dropStore
 	let name = 'world';
 
 	// @ts-ignore

@@ -28,9 +28,10 @@
 </script>
 
 <div class="parent-component-container">
-	<button class="w-full" on:click={() => (edit = !edit)}>
-		<LabelTagName {instance} type={'text'} />
-	</button>
+	<div class="flex justify-between "><LabelTagName {instance} type={'text'} />
+		<button class="m-2 flex-initial align-top " on:click={() => (edit = !edit)}><img class="text-center mx-auto flex shrink-0 p-1" src={"/edit.svg"} alt={"pencil for edit"}/>
+	</button></div>
+		
 	{#if edit}
 		<div class="options-container">
 			<div class="flex flex-1 flex-row flex-wrap items-center gap-x-4 gap-y-0">
